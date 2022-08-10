@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.logo {
+    margin: 1.5rem;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+    gap: 1rem;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar li {
+    padding-bottom: 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+#purpleText {
+    color: rgb(248,57,152);
+}
+p {
+    color: rgb(100, 100, 100);
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+/* main {
+    padding: 0 0 0 30px;
+} */
+.hero {
+    padding: 0 0 0 30px;
+    background-image: url(/assets/graphic.svg);
+    background-position: right -10em top -2em;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    min-height: 500px;
+}
+section h5 {
+    letter-spacing: 3px;
+}
+section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.button {
+    margin-top: 30px;
+    border-radius: 2.5rem;
+    padding: 1.2rem 3rem;
+    color: black;
+    font-weight: 600;
+    /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5); */
+    border: solid 4px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(50deg, #e72c9c, #ebbd07);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+.button:hover {
+  box-shadow: none;
+  color: white;
+}
+section div {
+    padding-top: 70px;
+    width: 70%;
+}
+.gradient {
+    background-image: url(/assets/background.svg);
+    background-repeat: no-repeat;
+    padding: 100px 30px 20px 20px;
+}
+.gradient h2 {
+    font-size: 2.5em;
+}
+.gradient p {
+    color: black;
+} 
