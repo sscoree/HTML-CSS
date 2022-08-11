@@ -23,7 +23,7 @@ nav {
 .navbar li {
     padding-bottom: 10px;
 }
-.navbar a {
+a {
     text-decoration: none;
     color: rgb(100, 100, 100);
 }
@@ -55,6 +55,7 @@ section h1 {
 }
 .button {
     margin-top: 30px;
+    margin-bottom: 100px;
     border-radius: 2.5rem;
     padding: 1.2rem 3rem;
     color: black;
@@ -77,11 +78,91 @@ section div {
 .gradient {
     background-image: url(/assets/background.svg);
     background-repeat: no-repeat;
-    padding: 100px 30px 20px 20px;
+    background-position: 30%;
+    /* background-size: cover; */
+    padding: 100px 40px 30px 30px;
 }
-.gradient h2 {
+h2 {
     font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 .gradient p {
     color: black;
-} 
+}
+.companies {
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto; */
+    gap: 30px;
+    justify-items: center;
+    /* overflow: hidden; */
+    /* margin: auto; */
+}
+/* .companies img:nth-child(1) {
+    margin-right: -100px;
+}  */
+.companies img:nth-child(4) {
+    display: none;
+}
+.cardsSection {
+    padding: 50px 30px;
+}
+.cardsSection a {
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
+}
+.cardWrapper {
+    /* border: solid 2px black; */
+    border-radius: 50px;
+    width: 300px;
+    height: 350px;
+    padding: 5px 30px;
+}
+.cardTop {
+    padding: 0;
+    margin: 0;
+    background-image: url(/assets/ntfs/ntf-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    height: 300px;
+}
+.cardBottom {
+    background-color: lightgrey;
+    display: grid;
+    gap: 10px;
+    justify-items: auto;
+    grid-template-columns: 1fr 1fr;
+    /* width: auto; */
+    padding: 0;
+    margin-left: 0;
+}
+.cardBottom {
+    padding: 20px 10px;
+}
+.cardBottom span:nth-child(1) {
+    color: orangered;
+    text-align: right;
+}
+.cardBottom span:nth-child(2),
+.cardBottom span:nth-child(5),
+.cardBottom span:nth-child(6) {
+    text-align: left;
+    color: grey;
+}
+.cardBottom span:nth-child(1),
+.cardBottom span:nth-child(2) {
+    font-size: 0.6em;
+}
+.cardBottom span:nth-child(3),
+.cardBottom span:nth-child(4) {
+    font-weight: 600;
+}
+.cardsContainer {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
