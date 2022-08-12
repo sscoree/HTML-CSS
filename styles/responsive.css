@@ -1,9 +1,54 @@
-@media screen and (min-width:768) {
-    nav {
-        display: flex;
-        flex-direction: row;
+@media screen and (min-width:768px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
     }
-    .navbar {
+    nav {
+        margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        margin: 20px;
+    }
+    section h1 {
+        font-size: 5rem;
+    }
+    .hero {
+        padding: 0 30px 100px 30px;
+        background-image: url(/assets/graphic.png);
+        background-position: right -2.5em top -2em;
+        background-size: 800px;
+        min-height: 500px;
+    }
+    .heroWrapper {
+        width: 45%;
+    }
+
+
+
+    .gradient {
+        background-position: 100%;
+        background-size: auto;
+        border-radius: 20px;
+        padding: 120px 100px 50px 50px;
+    }
+
+
+    .companies {
+        margin: 100px 0;
+        display: flex;
+        justify-content:space-between;
+    }
+    .companies img {
+        width: 175px;
+    }
+    .companies img:nth-child(4) {
+        display: block;
     }
 }
