@@ -1,0 +1,9 @@
+@media screen and (min-width:768) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar {
+        display: flex;
+    }
+}

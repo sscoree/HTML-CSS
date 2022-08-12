@@ -71,8 +71,7 @@ section h1 {
   box-shadow: none;
   color: white;
 }
-section div:nth-child(1),
-section div:nth-child(2) {
+.heroWrapper {
     padding-top: 70px;
     width: 70%;
 }
@@ -92,18 +91,25 @@ h2 {
     color: black;
 }
 .companies {
+    /* max-width: 350px; */
+    margin-top: 50px;
     padding-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: auto; */
-    gap: 30px;
-    justify-items: center;
+    /* gap: 30px; */
+    justify-items: flex-start;
+    align-items: center;
     /* overflow: hidden; */
     /* margin: auto; */
 }
 /* .companies img:nth-child(1) {
     margin-right: -100px;
 }  */
+.companies img {
+    padding: 10px;
+    width: 80%;
+}
 .companies img:nth-child(4) {
     display: none;
 }
@@ -114,23 +120,7 @@ h2 {
     color: rgb(70, 70, 70);
     text-decoration: underline;
 }
-.cardWrapper {
-    /* border: solid 2px black; */
-    border-radius: 50px;
-    width: 300px;
-    height: 350px;
-    padding: 5px 30px;
-}
-.cardTop {
-    padding: 0;
-    margin: 0;
-    background-image: url(/assets/ntfs/ntf-1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* width: 100%; */
-    height: 300px;
-}
+
 .cardBottom {
     background-color: lightgrey;
     display: grid;
@@ -138,21 +128,20 @@ h2 {
     grid-template-columns: 1fr 1fr;
     /* justify-items: center; */
     align-items: center;
+    border-radius: 0 0 15px 15px;
     /* width: auto; */
-    /* padding: 0; */
-    margin-left: 0;
+    padding: 20px;
+    /* margin-left: 0; */
+    /* width: 300px; */
+    margin-top: -10px;
 }
-.cardBottom {
-    width: 300px;
-}
+
 .cardBottom span:nth-child(1) {
     color: orangered;
-    text-align: right;
 }
 .cardBottom span:nth-child(2),
 .cardBottom span:nth-child(5),
 .cardBottom span:nth-child(6) {
-    text-align: left;
     color: grey;
 }
 .cardBottom span:nth-child(1),
@@ -163,27 +152,59 @@ h2 {
 .cardBottom span:nth-child(4) {
     font-weight: 600;
 }
-.cardsContainer {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-.cards {
-    width: 30vw;
-
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 20px;
-
-  align-items: center;
+.cardBottom span:nth-child(2),
+.cardBottom span:nth-child(4),
+.cardBottom span:nth-child(6) {
+    text-align: right;
 }
 .card {
     margin-left: 30px;
+    width: 290px;
 }
-.card .nftcard {
-    margin: 0;
-    padding: 0;
-    width: 300px;
+.cardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    margin-bottom: 70px;
 }
+.greenLady {
+    padding: 0 0 0 30px;
+    background-image: url(/assets/upsell-footer-image.svg);
+    background-position: right -1.5em top 8.5em;
+    background-repeat: no-repeat;
+    background-size: 180px;
+}
+.social p, 
+.socialIcons {
+    margin: 0 0 30px 30px; 
+}
+.socialIcons span{
+    margin-right: 10px;
+}
+.socialIcons i {
+    color: grey;
+}
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 30px;
+}
+.links p {
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.links span {
+    padding-bottom: 10px;
+}
+.veryBottom {
+    margin: 30px 0 70px 30px;
+}
+.veryBottom p {
+    color: rgb(173, 173, 173);
+}
+.veryBottom p:nth-child(2) {
+    display: none;
+}
+

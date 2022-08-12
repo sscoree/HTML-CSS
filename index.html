@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
     <title>HTML+CSS final</title>
 </head>
 <body>
@@ -28,7 +30,7 @@
 
     <main>
         <section class="hero">
-            <div>
+            <div class="heroWrapper">
                 <h5 id="purpleText">LAUNCHING SOON</h5>
                 <h1>An NFT like no other</h1>
                 <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
@@ -54,49 +56,96 @@
                 <h2>LE Super Rare Auction</h2>
                 <p> We have released four limited edition NFTs early which can be bid on via <span><a href="">OpenSea.</a></span></p>
             </div>
-            <!-- <div class="cardsContainer">
-                <div class="cardWrapper">
-                    <div class="cardTop"></div>
-                    <div class="cardBottom">
-                        <span>GLOOP SERIES</span>
-                        <span>TOP BID</span>
-                        <span>Purple Man</span>
-                        <span>2.99 ETH</span>
-                        <span>#12983</span>
-                        <span>1 day left</span>
+                <div class="cardsGrid">
+                    <div class="card">
+                        <img src="/assets/ntfs/ntf-1.svg" alt="">
+                        <div class="cardBottom">
+                            <span>GLOOP SERIES</span>
+                            <span>TOP BID</span>
+                            <span>Purple Man</span>
+                            <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
+                            <span>#12983</span>
+                            <span>1 day left</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/ntfs/nft-2.svg" alt="">
+                        <div class="cardBottom">
+                            <span>GLOOP SERIES</span>
+                            <span>TOP BID</span>
+                            <span>Beige</span>
+                            <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
+                            <span>#12983</span>
+                            <span>1 day left</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/ntfs/ntf-3.svg" alt="">
+                        <div class="cardBottom">
+                            <span>GLOOP SERIES</span>
+                            <span>TOP BID</span>
+                            <span>Red Man</span>
+                            <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
+                            <span>#12983</span>
+                            <span>1 day left</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/ntfs/ntf-4.svg" alt="">
+                        <div class="cardBottom">
+                            <span>GLOOP SERIES</span>
+                            <span>TOP BID</span>
+                            <span>Green</span>
+                            <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
+                            <span>#12983</span>
+                            <span>1 day left</span>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-            <div class="cards">
-
-            <div class="card">
-                <img class="nftcard" src="/assets/ntfs/ntf-3.svg" alt="" >
-                <div class="cardBottom">
-                    <span>GLOOP SERIES</span>
-                        <span>TOP BID</span>
-                        <span>Purple Man</span>
-                        <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
-                        <span>#12983</span>
-                        <span>1 day left</span>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/assets/ntfs/ntf-3.svg" alt="" >
-                <div class="cardBottom">
-                    <span>GLOOP SERIES</span>
-                        <span>TOP BID</span>
-                        <span>Purple Man</span>
-                        <span><img src="/assets/eth.svg" alt=""> 2.99 ETH</span>
-                        <span>#12983</span>
-                        <span>1 day left</span>
-                </div>
-            </div>
-        </div>
         </section>
+        <hr>
+        <section class="greenLady">
+            <div class="heroWrapper">
+                <h5 id="purpleText">LAUNCHING SOON</h5>
+                <h1>An NFT like no other</h1>
+                <p>Don't miss out on the release of our new NFT. Sign up below to receive updates.</p>
+            </div>
+            <button class="button">Sign Up</button>
+        </section>
+        <hr>
     </main>
 
     <footer>
-
+        <div class="social">
+            <a href="#home"><img class="logo" src="/assets/logo.svg" alt="nft landing logo"></a>
+            <p>Exclusive NFT Collection</p>
+            <div class="socialIcons">
+                <span><a href="https://facebook.com"><i class="bi bi-facebook"></i></a></i></span>
+                <span><a href="https://twitter.com"><i class="bi bi-twitter"></i></a></i></span>
+                <span><a href="https://instagram.com"><i class="bi bi-instagram"></i></a></i></span>
+                <span><a href="https://tiktok.com"><i class="bi bi-tiktok"></i></a></i></span>
+            </div>
+        </div>
+        <div class="links">
+            <p>ABOUT</p>
+            <p>NFT</p>
+          <span><a href="#">About</a></span>
+          <span><a href="#">OpenSea</a></span>
+          <span><a href="#">Terms</a></span>
+          <span><a href="#">Maker</a></span>
+          <span><a href="#">Legal</a></span>
+          <span><a href="#">Learn</a></span>
+            <p>Contact</p>
+            <p>Social</p>
+           <span><a href="#">Press</a></span>
+           <span><a href="#">Twitter</a></span>
+           <span><a href="#">Support</a></span>
+           <span><a href="#">Instagram</a></span>
+        </div>
+        <div class="veryBottom">
+            <p>&copy; Copyright 2022 NFTlanding</p>
+            <p>Launching August 2022</p>
+        </div>
     </footer>
 </body>
 </html>
