@@ -29,9 +29,6 @@
     .heroWrapper {
         width: 45%;
     }
-
-
-
     .gradient {
         background-position: 100%;
         background-size: auto;
@@ -39,12 +36,10 @@
         padding: 120px 100px 50px 50px;
         margin-left: 30px;
     }
-
-
     .companies {
         margin: 100px 0 50px 0;
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         overflow: hidden;
     }
     .companies img {
@@ -138,7 +133,7 @@
         grid-column: 2;
         grid-row: 4;
     }
-    .links span:nth-of-type(7)b{
+    .links span:nth-of-type(7) {
         grid-column: 3;
         grid-row: 2;
     }
@@ -153,7 +148,6 @@
     .links span:nth-of-type(10) {
         grid-column: 4;
         grid-row: 3;
-        color: blueviolet;
     }
     footer {
         margin: 70px 20px 70px 0;
